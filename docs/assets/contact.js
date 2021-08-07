@@ -4,6 +4,16 @@ $(function () {
     submitError: function ($form, event, errors) {},
     submitSuccess: function ($form, event) {
       event.preventDefault();
+      var onSubmit = function (token) {
+        console.log("success!");
+      };
+
+      var onloadCallback = function () {
+        grecaptcha.render("submit", {
+          sitekey: "6LfY_-YbAAAAACrwkCuaaWZibFSKrvgKWJQIEEuE",
+          callback: onSubmit,
+        });
+      };
       var name = $("input#name").val();
       var email = $("input#email").val();
       var subject = $("input#subject").val();
