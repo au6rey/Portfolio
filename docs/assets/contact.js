@@ -9,6 +9,9 @@ $(function () {
       var subject = $("input#subject").val();
       var message = $("textarea#message").val();
 
+      grecaptcha.execute();
+      var capres = grecaptcha.getResponse();
+      console.log(capres, "asdfasdasdasdasdasdasd");
       $this = $("#sendMessageButton");
       $this.prop("disabled", true);
 
@@ -22,6 +25,7 @@ $(function () {
           message: message,
           subject: subject,
           reply_to: email,
+          "g-recaptcha-response": capres,
         },
       };
 
