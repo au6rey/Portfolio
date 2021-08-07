@@ -22,6 +22,7 @@ $(function () {
           message: message,
           subject: subject,
           reply_to: email,
+           "g-recaptcha-response" : "03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...",
         },
       };
 
