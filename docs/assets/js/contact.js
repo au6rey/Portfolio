@@ -33,7 +33,7 @@ $(function () {
       $.ajax({
         cache: false,
         success: function () {
-          grecaptcha.getResponse();
+          console.log(grecaptcha.getResponse());
           emailjs
             .send("service_88lb8rs", "template_w95566d", {
               from_name: name,
@@ -41,7 +41,7 @@ $(function () {
               message: message,
               subject: subject,
               reply_to: email,
-              // "g-recaptcha-response": grecaptcha.getResponse(),
+              "g-recaptcha-response": grecaptcha.getResponse(),
             })
             .then(
               function (response) {
