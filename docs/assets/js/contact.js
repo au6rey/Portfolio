@@ -1,5 +1,3 @@
-var capres = grecaptcha.getResponse();
-console.log(capres);
 $(function () {
   $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
@@ -10,7 +8,8 @@ $(function () {
       var email = $("input#email").val();
       var subject = $("input#subject").val();
       var message = $("textarea#message").val();
-
+      var capres = grecaptcha.getResponse();
+      console.log(capres);
       var data = {
         service_id: "service_88lb8rs",
         template_id: "template_w95566d",
