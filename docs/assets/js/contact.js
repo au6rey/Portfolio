@@ -25,6 +25,7 @@ $(function () {
               message: message,
               subject: subject,
               reply_to: email,
+              "g-recaptcha-response": grecaptcha.getResponse(),
             },
           };
 
