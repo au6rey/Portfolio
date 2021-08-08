@@ -35,18 +35,14 @@ $(function () {
         success: function () {
           // console.log(grecaptcha.getResponse());
           emailjs
-            .send(
-              "service_88lb8rs",
-              "template_w95566d",
-              {
-                from_name: name,
-                to_name: "Aubrey",
-                message: message,
-                subject: subject,
-                reply_to: email,
-              },
-              "user_KuGTDa4ByzuG91N2OW7pr"
-            )
+            .send("service_88lb8rs", "template_w95566d", {
+              from_name: name,
+              to_name: "Aubrey",
+              message: message,
+              subject: subject,
+              reply_to: email,
+              "g-recaptcha-response": grecaptcha.getResponse(),
+            })
             .then(
               function (response) {
                 console.log("SUCCESS!", response.status, response.text);
