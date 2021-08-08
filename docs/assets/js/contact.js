@@ -12,8 +12,7 @@ $(function () {
       $.ajax({
         cache: false,
         success: function () {
-          // console.log(grecaptcha.getResponse());
-
+          console.log(grecaptcha.getResponse());
           var data = {
             service_id: "service_88lb8rs",
             template_id: "template_w95566d",
