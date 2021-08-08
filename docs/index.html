@@ -4,35 +4,36 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Aubrey's Website</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_KuGTDa4ByzuG91N2OW7pr");
-        })();
-    </script>
-    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
-    <!-- <script>
-        function onSubmit(token) {
-            document.getElementById("contactForm").submit();
-        }
-    </script> -->
+
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Favicon -->
     <link href="https://technext.github.io/devfolio2/img/favicon.ico" rel="icon">
 
     <!-- Google Font -->
-    <link href="./assets/css2" rel="stylesheet">
+    <link href="./assets/style/css2" rel="stylesheet">
 
     <!-- CSS Libraries -->
-    <link href="./assets/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/all.min.css" rel="stylesheet">
-    <link href="./assets/animate.min.css" rel="stylesheet">
-    <link href="./assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="./assets/lightbox.min.css" rel="stylesheet">
+    <link href="./assets/style/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/style/all.min.css" rel="stylesheet">
+    <link href="./assets/style/animate.min.css" rel="stylesheet">
+    <link href="./assets/style/owl.carousel.min.css" rel="stylesheet">
+    <link href="./assets/style/lightbox.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="./assets/style.css" rel="stylesheet">
+    <link href="./assets/style/style.css" rel="stylesheet">
+
+    <!-- Email service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_KuGTDa4ByzuG91N2OW7pr");
+        })();
+    </script>
+
+    <!-- Google reacaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51" data-new-gr-c-s-check-loaded="14.1024.0"
@@ -86,7 +87,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 d-none d-md-block ">
-                    <img src="./assets/hero.png" alt="Hero Image">
+                    <img src="./assets/img/hero.png" alt="Hero Image">
                     <!-- <p style="font-size: 20px;">
                         Self-driven, result-oriented.
                         <br>
@@ -107,7 +108,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="./assets/about.jpg" alt="Image">
+                        <img src="./assets/img/about.jpg" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -303,7 +304,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
                             <a href="https://github.com/au6rey/ResumeScheme" target="_blank">
-                                <img src="./assets/scheme.png" alt="Image"></a>
+                                <img src="./assets/img/scheme.png" alt="Image"></a>
                         </div>
 
                         <div class="portfolio-text">
@@ -322,7 +323,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
                             <a href="https://github.com/au6rey/Mpesa-Deno" target="_blank">
-                                <img src="./assets/mpesa.png" alt="Image">
+                                <img src="./assets/img/mpesa.png" alt="Image">
                             </a>
 
                         </div>
@@ -344,7 +345,7 @@
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
                             <a href="https://au6rey.github.io/P5-ToneJS-game" target="_blank">
-                                <img src="./assets/crossstreet.png" alt="Image">
+                                <img src="./assets/img/crossstreet.png" alt="Image">
                             </a>
                         </div>
                         <div class="portfolio-text">
@@ -401,18 +402,14 @@
                                         data-validation-required-message="Please enter your message"></textarea>
                                     <p class="help-block"></p>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6LfY_-YbAAAAACrwkCuaaWZibFSKrvgKWJQIEEuE"></div>
                                 <div>
-                                    <!-- <div class="g-recaptcha" data-sitekey="6LfY_-YbAAAAACrwkCuaaWZibFSKrvgKWJQIEEuE">
-                                    </div>
-                                    <br /> -->
+
                                     <button class="btn" type="submit" id="sendMessageButton">
                                         Send Message
                                     </button>
                                 </div>
                             </form>
-                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-                                async defer>
-                                </script>
                         </div>
                     </div>
                 </div>
@@ -423,22 +420,22 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="./assets/jquery-3.4.1.min.js"></script>
-    <script src="./assets/bootstrap.bundle.min.js"></script>
-    <script src="./assets/easing.min.js"></script>
-    <script src="./assets/wow.min.js"></script>
-    <script src="./assets/waypoints.min.js"></script>
-    <script src="./assets/typed.min.js"></script>
-    <script src="./assets/owl.carousel.min.js"></script>
-    <script src="./assets/isotope.pkgd.min.js"></script>
-    <script src="./assets/lightbox.min.js"></script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/easing.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/typed.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/lightbox.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="./assets/jqBootstrapValidation.min.js"></script>
-    <script src="./assets/contact.js"></script>
+    <script src="./assets/js/jqBootstrapValidation.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="./assets/main.js"></script>
+    <script src="./assets/js/main.js"></script>
     <style type="text/css" data-typed-js-css="true">
         .typed-cursor {
             opacity: 1;
